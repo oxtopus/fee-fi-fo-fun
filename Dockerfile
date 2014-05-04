@@ -1,2 +1,4 @@
 FROM numenta/nupic
-RUN python -c "import nupic"
+ADD . /home/docker/fee-fi-fo-fun
+WORKDIR /home/docker/fee-fi-fo-fun
+CMD python run.py
